@@ -276,7 +276,7 @@ public class SignAndVerifyImageSignature {
 		    	  int pixel_signed = list[i].get(list[i].size() - 1).get(0).get(2)+1;
 		    	  int sequence = get_sequence(ImagesToFromFiles.getImage(photo[i]));
 		    	  
-		    	  for(int key=1;key<1000000;key++) {
+		    	  for(int key=1;key<100000000;key++) {
 					  ArrayList <Integer> key_arr = genarate_sequence(key, pixel_signed,sequence);
 					  boolean s = judge(key_arr, list[i]);
 					  if(s)
